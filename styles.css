@@ -1,0 +1,414 @@
+*,
+*::width,
+*::height{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    color: azure;
+}
+
+#welcome{
+    height: 100vh;
+    position: relative;
+    padding: 3rem 5rem 1rem 5rem;
+}
+
+#navbar{
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 2rem;
+    font-size: 1.1rem;
+    display: flex;
+    padding: 2rem 2rem 2rem 2rem ; 
+    position: fixed;
+    background-color: black;
+    text-align: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.nav-style{
+    margin-right: 30px;
+    color: pink;
+    text-decoration: none;
+    position: relative;
+}
+
+.nav-style::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0; 
+    height: 2px;
+    background-color: pink;
+    transition: width 0.3s ease;
+}
+
+.nav-style:hover::after{
+    width: 100%;
+}
+#toggle-menu{
+    display:none;
+}
+.nav-style:hover{
+    color:blanchedalmond;
+    
+}
+
+.name{
+    margin: 0 30rem 0 5rem;
+    font-size: 3rem;
+    color: palevioletred;
+}
+
+em{
+    color:aliceblue;
+}
+
+.cpt{
+    margin: 10rem 0 50px 100px;
+    font-style: oblique;
+    font-size: 1.3rem;
+    color:azure;
+}
+
+.call{
+    margin: 20px 0 0 100px;
+    font-size: 2.5rem;
+}
+
+.bold{
+    color:palevioletred
+}
+
+body img{
+    position: absolute;
+    top: 30px;
+    right: 80px;
+    width: 650px;
+    height: 600px;
+}
+
+#about{
+    height: 100vh;
+    background-color: black;
+    color: azure;
+    text-align: center;
+    display:flex;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    font-style: oblique;
+}
+
+#skills{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: azure;
+    font-size: 1.5rem;
+    font-style: oblique;
+}
+
+#skills p{
+    padding-top: 35px;
+    font-size: 1.1rem;
+    color: rgb(137, 184, 199);
+    font-weight: bold;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#projects{
+    max-height: 300vh;
+    text-align: center;
+    align-items: center;
+    font-size: 2rem;
+    font-style: oblique;
+    margin: 1rem 1rem;
+    color: azure;
+    padding: 4rem 0 0 0;
+}
+
+#projects h1{
+    text-decoration: underline;
+}
+
+#btn{
+    margin: 2rem 0 0 0;
+    width: 300px;
+    height: 35px;
+    background-color: gold;
+    background-image: linear-gradient(yellow, orange);
+    border: 3px solid gold;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#contact{
+    position: relative;
+    padding: 2rem 0 0 0;
+    font-size: 1.5rem;
+}
+
+#work{
+    width: 40rem;
+    height: 10rem;
+    margin: 0 auto;
+    text-align: center;
+    background-color: bisque;
+}
+
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem
+}
+
+.project{
+    width: 20rem;
+    height: 20rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid azure;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0,5);
+    width: 300px;
+    font-size: 1.5rem;
+    background-color: rgb(121, 156, 169);
+}
+
+.project img{
+    width: 100%;
+    height: 17rem;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    position: relative;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    padding-bottom: 0;
+}
+
+.project a{
+    text-decoration:none !important;
+    color: azure;
+}
+
+.no-underlined{
+    text-decoration: none;
+    color: azure;
+}
+
+p a{
+    color: rgb(162, 109, 109);
+    cursor: pointer;
+    margin: 0.5rem 0;
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block;
+}
+
+p a:hover{
+    color: rgb(61, 100, 139);
+    transform: scale(1.5);
+}
+
+footer{
+    padding-top: 2rem;
+    height: 3rem;
+    font-size: 1rem;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+.menu{
+    display: none;
+}
+
+.my-name{
+    display: none;
+    top: 0;
+    left: 0;
+    position: relative;
+}
+
+em{
+    color: powderblue;
+}
+
+@media(max-width: 780px){
+    *,
+    *::width,
+    *::height{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1rem;
+        background-color: white;
+        color: black;
+    }
+
+    body main{
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #projects, #about, #skills, #contact, #welcome{
+        background-color: white;
+        color: black;
+    }
+
+    main #welcome-text{
+        color: black;
+        margin: 1rem 0 0 0;
+    }
+    #welcome img{
+        display: none;
+    }
+
+    #navbar{
+        display: flex;
+        justify-content: center;
+        background-color: rgb(248, 238, 226);
+        position: fixed;
+        align-items: center;
+        padding: 1rem 0.5rem;
+        height: 2rem;
+        margin-bottom: 5rem;
+    }
+    
+    .cpt .call{
+        display: block;
+        color: black;
+        width: 50rem;
+        margin-right: 2rem;
+        
+    } 
+
+    main .call{
+        margin: 1rem;
+
+    }
+    main .cpt{
+        margin: 1rem;
+        color: black;
+        font-size: 1rem;
+        padding: 5rem 0 0 0;
+    }
+
+    #projects h1{
+        font-size: 1.5rem;
+    }
+    #skills h2{
+        font-size: 1.5rem;
+        width: 20rem;
+        padding: 1rem;
+        margin: 1rem;
+    }
+    main #about{
+        width: 10rem;
+        margin: 1rem auto;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .name{
+        color: black;
+        font-size: 2.5rem;
+        margin: 0 7rem 0 0;
+    }
+
+    .nav-style{
+        color: black;
+        display: flex;
+        margin: 1rem 2rem ;
+    }
+
+    .menu{
+        display: block;
+        color: black;
+        font-size: 2.5rem;
+        margin: 0 2rem 0 ;
+        cursor: pointer;
+        margin: 0 0 0 2rem;
+    }
+
+    #menu{
+        flex-direction: column;
+        position: absolute;
+        top: 3rem;
+        right: 0;
+        width: 15rem;
+        height: 15rem;
+        padding: 1rem 0;
+        border-radius: 2rem;
+        border : 2px solid white;
+        background-color: bisque;
+    }
+
+    .hidden{
+        display: none;
+    }
+   
+    #toggle-menu{
+        cursor: pointer;
+        border: none;
+        background-color: inherit;
+        font-size: 24px;
+        display: block;
+    }
+
+    #container{
+        flex-wrap: wrap;
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project{
+        width: 10rem;
+        height: 15rem;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid azure;
+        border-radius: 10px;
+        font-size: 5px;
+        background-color: rgb(121, 156, 169);
+    }
+
+    .project img{
+        top: 0;
+        height: 13rem;
+    }
+
+    .project .no-underlined{
+        font-size: 1rem;
+    }
+
+    #btn{
+        width: 10rem;
+        height: 2rem;
+        font-size: 1rem;
+    }
+
+}
