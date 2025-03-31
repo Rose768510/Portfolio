@@ -1,7 +1,8 @@
 const btn = document.querySelector('#btn') ;
 const container = document.getElementById('container');
 const toggleMenu = document.querySelector('#toggle-menu');
-const menu = document.querySelector('#menu')
+const menu = document.querySelector('#menu');
+const deleteBtn = document.querySelector('#delete');
 
 let startingIndex = 0;
 let endingIndex = 3;
@@ -13,7 +14,7 @@ const projects= [
         name: 'Healthy Foodies',
         link: 'https://rose768510.github.io/Healthy-Foodies/',
         description: "healthy foods"
-    },
+    }, 
 
     {
         id: 2,
@@ -146,4 +147,8 @@ document.querySelectorAll('.nav-style').forEach(link => {
     link.addEventListener('click', () => {
         menu.classList.add('hidden');
     })
+});
+
+deleteBtn.addEventListener('click', () => {
+    menu.classList.add('hidden');
 })
